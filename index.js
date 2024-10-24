@@ -9,9 +9,6 @@
 
 
 // const path = require('path');
-// // console.log(__dirname);
-// // console.log(__filename);
-// // console.log(path.basename(__filename))
 // console.log(path.basename(__dirname))
 
 // console.log(path.join('/hello','/world','/file.txt'))
@@ -57,16 +54,23 @@
 
 
 
-const fs = require('fs');
+// const fs = require('fs');
 
-fs.readFile(__filename,()=>{
-    console.log('hello im file')
-})
+// fs.readFile(__filename,()=>{
+//     console.log('hello im file')
+// })
 
-process.nextTick(()=>{
-    console.log('hello im tick')
-})
+// process.nextTick(()=>{
+//     console.log('hello im tick')
+// })
 
-Promise.resolve().then(()=>{
-    console.log('im promise')
-})
+// Promise.resolve().then(()=>{
+//     console.log('im promise')
+// })
+
+
+// const imp = require("./add");
+// console.log(imp.d);
+
+const imp = require('./example');
+console.log(imp);
