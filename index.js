@@ -16,7 +16,7 @@
 
 // console.log(path.join('/hello','/world','/file.txt'))
 
-const fs = require('fs')
+// const fs = require('fs')
 
 
 // fs.readFile('file.txt','utf-8',(err,data)=>{
@@ -39,22 +39,34 @@ const fs = require('fs')
 
 // event , event loop
 
-function f1(){
-    console.log('i am f1')
-    f3();
-}
+// function f1(){
+//     console.log('i am f1')
+//     f3();
+// }
 
-function f2(){
-    console.log('i am f2')
-    f1();
-}
+// function f2(){
+//     console.log('i am f2')
+//     f1();
+// }
 
-function f3(){
-    console.log('i am f3')
-}
+// function f3(){
+//     console.log('i am f3')
+// }
 
-f2();
-
-
+// f2();
 
 
+
+const fs = require('fs');
+
+fs.readFile(__filename,()=>{
+    console.log('hello im file')
+})
+
+process.nextTick(()=>{
+    console.log('hello im tick')
+})
+
+Promise.resolve().then(()=>{
+    console.log('im promise')
+})
