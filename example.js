@@ -1,7 +1,7 @@
-module.exports.arr = ['item1','item2'];
+// module.exports.arr = ['item1','item2'];
 
-const obj = {
-    person : 'john'
-}
+// const obj = {
+//     person : 'john'
+// }
 
-module.exports.name = obj;
+// module.exports.name = obj;

@@ -71,6 +71,62 @@
 
 // const imp = require("./add");
 // console.log(imp.d);
+ 
+// const imp = require('./example');
+// console.log(imp);
 
-const imp = require('./example');
-console.log(imp);
+
+// require('./example')
+
+
+// const s = require('./a')
+// // console.log(a)
+// console.log(s)
+
+
+// const fs = require("fs")
+
+// fs.writeFileSync('./text.txt','hello im new file')
+
+// fs.writeFile('./text.txt','hello new file', (err)=>{err})
+
+
+// // read file
+
+// fs.readFileSync('./text.txt','utf-8')
+
+// fs.readFile('./text.txt','utf-8',
+//     (err,data)=>{
+//         if(err){
+//             console.log('this is err :' , err);
+//         }
+//         console.log('this is data :' , data);
+//     }
+// )
+
+// fs.accessSync('./text.txt')
+
+
+// blocking and non blocking
+// blocking - sync , non-blocking - async
+
+// const os = require('os');
+// console.log(os.cpus().length)
+
+// blocking 
+// const fs = require('fs');
+
+// fs.writeFileSync('./contact.txt', 'a: +908700')
+
+// fs.writeFileSync('./contact.txt','b:+0865090090')
+
+// const r = fs.readFileSync('./contact.txt','utf-8')
+// console.log(r)
+
+// non blocking
+
+const fs = require('fs');
+
+const r = fs.readFile('./contact.txt','utf-8', (err,result) =>{
+    console.log(result);
+})
