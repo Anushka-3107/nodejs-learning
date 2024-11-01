@@ -125,8 +125,19 @@
 
 // non blocking
 
-const fs = require('fs');
+// const fs = require('fs');
+// const r = fs.readFile('./contact.txt','utf-8', (err,result) =>{
+//     console.log(result);
+// })
 
-const r = fs.readFile('./contact.txt','utf-8', (err,result) =>{
-    console.log(result);
-})
+
+
+
+
+const os = require('os');
+const hostname = os.hostname();
+const platform = os.platform();
+const x = os.cpus();
+console.log(hostname)
+console.log(platform)
+console.log(x)
