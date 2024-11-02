@@ -134,10 +134,33 @@
 
 
 
-const os = require('os');
-const hostname = os.hostname();
-const platform = os.platform();
-const x = os.cpus();
-console.log(hostname)
-console.log(platform)
-console.log(x)
+// const os = require('os');
+// const hostname = os.hostname();
+// const platform = os.platform();
+// const x = os.cpus();
+// console.log(hostname)
+// console.log(platform)
+// console.log(x)
+
+
+// path
+
+// const { type } = require('os');
+// const path = require('path');
+
+// const obj = {
+//     type : path.basename(__dirname),
+//     pathname: path.basename(__filename)
+// }
+
+// console.log(obj.type)
+
+
+// creating a serve in nodejs
+
+const http = require('http');
+// console.log(http)
+
+http.createServer((req,res) => {
+    res.end('hello world');
+}).listen(8000)
