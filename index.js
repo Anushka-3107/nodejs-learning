@@ -131,8 +131,44 @@
 // })
 
 
+const fs = require('fs');
+// const result = fs.readFileSync('./calc.js','utf-8')
+// console.log(result);
+
+// sync
+// const res = fs.writeFileSync('text1.js','hello new text file');
+// console.log(res);
+
+// /async
+// const res = fs.writeFile('text1.txt','new async text file',(err,data)=>{
+//     if(err){
+//         console.error(err);
+//     }
+//     console.log(data);
+// })
+
+// console.log(res);
+
+// append file
+// const res = fs.appendFile('./calc.js','new liness',(err,data)=>{
+//     if(err){
+//         console.error(err);
+//     }
+//     console.log(data);
+// })
+// console.log(res);
 
 
+// delete file
+// const fs = require('fs');
+// const res = fs.unlink('./text1.js',(err,data)=>{
+//     if(err){
+//         console.err(err);
+//     }
+//     console.log(data)
+// })
+
+// console.log(res)
 
 // const os = require('os');
 // const hostname = os.hostname();
@@ -158,9 +194,9 @@
 
 // creating a serve in nodejs
 
-const http = require('http');
-// console.log(http)
+// const http = require('http');
+// // console.log(http)
 
-http.createServer((req,res) => {
-    res.end('hello world');
-}).listen(8000)
+// http.createServer((req,res) => {
+//     res.end('hello world');
+// }).listen(8000)
